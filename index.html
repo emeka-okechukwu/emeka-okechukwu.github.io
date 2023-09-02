@@ -1,408 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emeka Okechukwu</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("3_71zcaDo-sbZdsYk");
-    })();
-  </script>
-</head>
-
-<body>
-  <section id="landing-page" onmousemove="moveBackground(event)">
-    <nav>
-      <figure>
-        <img id="personal-logo" src="./assets/logo.svg" alt="">
-      </figure>
-
-      <ul class="nav__link--list">
-        <li class="nav__link" onclick="toggleModal()">
-          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About Me</a>
-        </li>
-
-        <li class="nav__link">
-          <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
-        </li>
-
-        <li class="nav__link" onclick="toggleModal()">
-          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
-        </li>
-
-        <li class="nav__link click" onclick="toggleContrast()">
-          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i class="fas fa-adjust"></i></a>
-        </li>
-      </ul>
-    </nav>
-    
-    <header class="header">
-      <div class="header__content">
-        <h1 class="title">Hey</h1>
-
-        <h1 class="title orange">I'm Emeka.</h1>
-
-        <p class="header__para">
-          I'm a <b class="orange">Full Stack Web Developer</b> with a strong passion for delivering web applications that provide value for users.
-          <br>
-          Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
-        </p>
-
-        <div class="social__list">
-          <a href="https://www.linkedin.com/in/emeka-okechukwu-0410/" target="_blank" class="social__link click">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-
-          <a href="https://github.com/emeka-okechukwu-dev" target="_blank" class="social__link click">
-            <i class="fab fa-github"></i>
-          </a>
-
-          <a href="https://docs.google.com/document/d/1qX4ilOjpSRjjcsH7FulPzzItwj4-A4VuGtpBUZmz0t4/edit?usp=sharing" target="_blank"
-          class="social__link click">
-            <i class="fas fa-file-pdf"></i>
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <a href="#">
-      <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fas fa-envelope"></i>
-      </button>
-    </a>
-
-    <a href="#projects" class="scroll">
-      <div class="scroll__icon click"></div>
-    </a>
-
-    <div class="modal">
-      <div class="modal__half modal__about">
-        <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
-
-        <h4 class="modal__sub-title modal__sub-title--about">Full Stack Developer Based in Canada.</h4>
-
-        <p class="modal__para">
-          I discovered my passion for web development while creating a news website for my high school 
-          using Bootstrap - learning a lot about <b class="orange">HTML</b> and <b class="orange">CSS</b>.
-          <br>
-          Today, I have the experience working for a <b class="orange">data analytic company</b>, an <b class="orange">ad agency</b> 
-          and a <b class="orange">start-up</b>. As a freelancer, I designed <b class="orange">10+</b> websites including 
-          an e-commerce store for a <b class="orange">7-figure</b> fitness brand.
-        </p>
-
-        <div class="modal__languages">
-          <figure class="modal__language">
-            <img class="modal__language--img"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-              alt="">
-            <span class="language__name">HTML5</span>
-          </figure>
-
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-              alt="">
-            <span class="language__name">CSS3</span>
-          </figure>
-
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
-            <span class="language__name">JavaScript</span>
-          </figure>
-
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/free-python-2-226051.png" alt="">
-            <span class="language__name">Python</span>
-          </figure>
-
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/mysql-3521596-2945040.png" alt="">
-            <span class="language__name">MySQL</span>
-          </figure>
-
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
-            <span class="language__name">React</span>
-          </figure>
-
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/wordpress-18-432558.png" alt="">
-            <span class="language__name">WordPress</span>
-          </figure>
-
-          <figure class="modal__language">
-            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/shopify-226579.png" alt="">
-            <span class="language__name">Shopify</span>
-          </figure>
-        </div>
-      </div>
-
-      <div class="modal__half modal__contact">
-        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-
-        <h3 class="modal__title modal__title--contact">
-          Let's have a chat!
-        </h3>
-
-        <h3 class="modal__sub-title modal__sub-title--contact">
-          I'm currently open to new opportunities.
-        </h3>
-
-        <form id="contact__form" onsubmit="contact(event)">
-          <div class="form__item">
-            <label class="form__item--label">Name</label>
-            <input class="input" name="user_name" type="text" required></input>
-          </div>
-
-          <div class="form__item">
-            <label class="form__item--label">Email</label>
-            <input class="input" name="user_email" type="email" required></input>
-          </div>
-
-          <div class="form__item">
-            <label class="form__item--label">Message</label>
-            <textarea class="input" name="message" type="text" required></textarea>
-          </div>
-
-          <button id="contact__submit" class="form__submit">
-            Send it my way
-          </button>
-        </form>
-
-        <div class="modal__overlay modal__overlay--loading">
-          <i class="fas fa-spinner"></i>
-        </div>
-
-        <div class="modal__overlay modal__overlay--success">
-          Thanks for the message! Looking forward to speaking to you soon.
-        </div>
-      </div>
-    </div>
-
-    <img src="./assets/semi circle.svg" class="shape shape--0">
-    <img src="./assets/circle.svg" class="shape shape--1">
-    <img src="./assets/squiggly.svg" class="shape shape--2">
-    <img src="./assets/circle.svg" class="shape shape--3">
-    <img src="./assets/triangle.svg" class="shape shape--4">
-    <img src="./assets/circle.svg" class="shape shape--5">
-    <img src="./assets/squiggly.svg" class="shape shape--6">
-    <img src="./assets/circle.svg" class="shape shape--7">
-    <img src="./assets/semi circle.svg" class="shape shape--8">
-  </section>
-
-  <section id="projects">
-    <div class="container">
-      <div class="row">
-        <h1 class="section__title">
-          Here are some of my <span class="orange">projects</span>
-        </h1>
-
-        <ul class="project__list">
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/research-hub.png" class="project__img" alt="">
-
-              <div class="project__wrapper--bg"></div>
-
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Research Hub
-                </h3>
-
-                <h4 class="project__description--sub-title">
-                  PHP, HTML, CSS, JavaScript, MySQL
-                </h4>
-
-                <p class="project__description--para">
-                  Research Hub is a responsive web application that streamlines the research process for academics, 
-                  providing easy access to a wealth of resources and collaborative tools.
-                </p>
-
-                <div class="project__description--links">
-                  <a href="https://github.com/emeka-okechukwu-dev/research-hub.git" target="_blank"
-                    class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-
-                  <a href="https://researchhubapp.com" target="_blank" class="project__description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emeka Okechukwu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a0c5c115e8.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("3_71zcaDo-sbZdsYk");
+      })();
+    </script>
+  </head>
+  <body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure>
+          <img id="personal-logo" src="./assets/logo.svg" alt="">
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link" onclick="toggleModal()">
+            <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About Me</a>
           </li>
-
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/odk-x.png" class="project__img" alt="">
-
-              <div class="project__wrapper--bg"></div>
-
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  ODK-X Survey
-                </h3>
-
-                <h4 class="project__description--sub-title">
-                  HTML, CSS, JavaScript
-                </h4>
-
-                <p class="project__description--para">
-                  The purpose of this project was to add a range of new prompt types to ODK-X Survey, 
-                  including support for non-Gregorian calendars through the integration of a third-party jQuery plugin.
-                </p>
-
-                <div class="project__description--links">
-                  <a href="https://github.com/odk-x/app-designer/tree/gsoc-2021" target="_blank"
-                    class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-
-                  <a href="https://github.com/odk-x/survey/releases" target="_blank" class="project__description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <li class="nav__link">
+            <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
           </li>
-
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/connect-u.png" class="project__img" alt="">
-
-              <div class="project__wrapper--bg"></div>
-
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Connect-U
-                </h3>
-
-                <h4 class="project__description--sub-title">
-                  Python (Django), HTML, CSS
-                </h4>
-
-                <p class="project__description--para">
-                  Connect-U is a career service platform designed to connect students with potential employers.
-                </p>
-
-                <div class="project__description--links">
-                  <a href="https://github.com/emeka-okechukwu-dev/connect-u.git" target="_blank"
-                    class="project__description--link">
-                    <i class="fab fa-github"></i>
-                  </a>
-
-                  <a href="https://project-connect-u.vercel.app" target="_blank" class="project__description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <li class="nav__link" onclick="toggleModal()">
+            <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
           </li>
-
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/twice-the-speed.png" class="project__img" alt="">
-
-              <div class="project__wrapper--bg"></div>
-
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Twice The Speed
-                </h3>
-
-                <h4 class="project__description--sub-title">
-                  Shopify
-                </h4>
-
-                <p class="project__description--para">
-                  Twice The Speed has been a prominent company in the speed and agility industry since 2009 and 
-                  has gained a significant presence in 70+ countries around the world by selling their workout programs.
-                </p>
-
-                <div class="project__description--links">
-                  <a href="https://shop.twicethespeed.com" target="_blank" class="project__description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="project">
-            <div class="project__wrapper">
-              <img src="./assets/green-life-nj.png" class="project__img" alt="">
-
-              <div class="project__wrapper--bg"></div>
-              
-              <div class="project__description">
-                <h3 class="project__description--title">
-                  Green Life NJ
-                </h3>
-
-                <h4 class="project__description--sub-title">
-                  WordPress, HTML, CSS
-                </h4>
-
-                <p class="project__description--para">
-                  Green Life NJ is a highly-qualified and experienced lawn care company serving Princeton, NJ 
-                  and the surrounding area, focused on improving the value and beauty of residential properties.
-                </p>
-
-                <div class="project__description--links">
-                  <a href="https://greenlifenj.org/" target="_blank" class="project__description--link">
-                    <i class="fas fa-link"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">
+              <i class="fas fa-adjust"></i>
+            </a>
           </li>
         </ul>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <div class="row footer__row">
-        <a href="#" class="footer__anchor">
-          <figure class="footer__logo">
-            <img src="./assets/logo.svg" class="footer__logo--img" alt="">
-          </figure>
-
-          <span class="footer__logo--popper">
-            Top
-            <i class="fas fa-arrow-up"></i>
-          </span>
-        </a>
-
-        <div class="footer__social--list">
-          <a href="https://github.com/emeka-okechukwu-dev" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
-            GitHub
-          </a>
-
-          <a href="https://www.linkedin.com/in/emeka-okechukwu-0410/" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
-            LinkedIn
-          </a>
-
-          <a href="#" onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white">
-            Contact
-          </a>
-
-          <a href="https://docs.google.com/document/d/1qX4ilOjpSRjjcsH7FulPzzItwj4-A4VuGtpBUZmz0t4/edit?usp=sharing" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white">
-            Resume
-          </a>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title orange">I'm Emeka.</h1>
+          <p class="header__para"> I'm a <b class="orange">Full Stack Software Developer</b> with a strong passion for delivering software applications that provide value for users. <br> Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>. </p>
+          <div class="social__list">
+            <a href="https://www.linkedin.com/in/emeka-okechukwu-0410/" target="_blank" class="social__link click">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/emeka-okechukwu-dev" target="_blank" class="social__link click">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://drive.google.com/file/d/1wmAhCUDveBORAxQCL7a2FbLsYYXb_Bde/view?usp=share_link" target="_blank" class="social__link click">
+              <i class="fas fa-file-pdf"></i>
+            </a>
+          </div>
         </div>
-        <div class="footer__copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Emeka Okechukwu</div>
+      </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">About Me.</h3>
+          <h4 class="modal__sub-title modal__sub-title--about">Full Stack Software Developer Based in Canada.</h4>
+          <p class="modal__para"> I discovered my passion for software development while creating a news website for my high school using Bootstrap - learning a lot about <b class="orange">HTML</b> and <b class="orange">CSS</b>. <br> Today, I have the experience working for a <b class="orange">data analytic company</b>, an <b class="orange">ad agency</b> and a <b class="orange">start-up</b>. As a freelancer, I designed <b class="orange">10+</b> web applications including an e-commerce store for a <b class="orange">7-figure</b> fitness brand. </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+              <span class="language__name">HTML5</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+              <span class="language__name">CSS3</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+              <span class="language__name">TypeScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/free-python-2-226051.png" alt="">
+              <span class="language__name">Python</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/free-java-22-225997.png.png" alt="">
+              <span class="language__name">Java</span>
+            </figure>
+            <figure class="modal__language">
+              <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/mysql-3521596-2945040.png" alt="">
+              <span class="language__name">MySQL</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact"> Contact Me </h3>
+          <h3 class="modal__sub-title modal__sub-title--contact"> Let's have a chat </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required></input>
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit"> Send it my way </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success"> Thanks for the message! Looking forward to speaking to you soon. </div>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+      <img src="./assets/semi circle.svg" class="shape shape--0" alt="Semi Circle">
+      <img src="./assets/circle.svg" class="shape shape--1" alt="Circle">
+      <img src="./assets/squiggly.svg" class="shape shape--2" alt="Squiggly">
+      <img src="./assets/circle.svg" class="shape shape--3" alt="Circle">
+      <img src="./assets/triangle.svg" class="shape shape--4" alt="Triangle">
+      <img src="./assets/circle.svg" class="shape shape--5" alt="Circle">
+      <img src="./assets/squiggly.svg" class="shape shape--6" alt="Squiggly">
+      <img src="./assets/circle.svg" class="shape shape--7" alt="Circle">
+      <img src="./assets/semi circle.svg" class="shape shape--8" alt="Semi Circle">
+    </section>
+    <section id="projects" class="relative">
+      <div class="container mx-auto max-w-6xl px-4 xs:px-6 py-12 xs:py-16 md:py-20">
+        <div class="row">
+          <h1 class="section__title"> Here are some of my <span class="orange">projects</span>
+          </h1>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 xs:gap-y-12 z-10">
+            <div class="flex flex-col bg-white dark:bg-dark rounded-md overflow-hidden shadow-xl">
+              <figure class="relative pb-[56.25%] overflow-hidden">
+                <a href="https://get-started-anime.vercel.app/" target="_blank">
+                  <img src="assets/get-started-anime.png" alt="Get Started Anime" class="project-image absolute object-cover object-center">
+                </a>
+              </figure>
+              <div class="flex flex-col p-6 xs:p-8">
+                <h3 class="project__title"> Get Started Anime </h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="tag">React</div>
+                  <div class="tag">TypeScript</div>
+                  <div class="tag">Java</div>
+                  <div class="tag">Spring Boot</div>
+                  <div class="tag">OpenAI API</div>
+                </div>
+                <p class="project__description"> Get Started Anime uses OpenAI to recommend tailored anime based on users' favorite movies, helping newcomers discover the perfect shows. </p>
+                <div class="flex flex-wrap gap-2">
+                  <a href="https://get-started-anime.vercel.app/" target="_blank" class="project__link">
+                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                    <span>Live</span>
+                  </a>
+                  <a href="https://github.com/emeka-okechukwu-dev/get-started-anime" target="_blank" class="project__link">
+                    <i class="fa-brands fa-github text-sm"></i>
+                    <span>Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col bg-white dark:bg-dark rounded-md overflow-hidden shadow-xl">
+              <figure class="relative pb-[56.25%] overflow-hidden">
+                <a href="https://researchhubapp.com/" target="_blank">
+                  <img src="assets/research-hub.png" alt="Research Hub" class="project-image absolute object-cover object-center">
+                </a>
+              </figure>
+              <div class="flex flex-col p-6 xs:p-8">
+                <h3 class="project__title"> Research Hub </h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="tag">JavaScript</div>
+                  <div class="tag">PHP</div>
+                  <div class="tag">MySQL</div>
+                  <div class="tag">Bootstrap</div>
+                </div>
+                <p class="project__description"> Research Hub is a user-friendly website that makes academic research easier by giving scholars convenient access to a wide range of resources and tools for collaboration. </p>
+                <div class="flex flex-wrap gap-2">
+                  <a href="https://researchhubapp.com/" target="_blank" class="project__link">
+                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                    <span>Live</span>
+                  </a>
+                  <a href="https://github.com/emeka-okechukwu-dev/research-hub.git" target="_blank" class="project__link">
+                    <i class="fa-brands fa-github text-sm"></i>
+                    <span>Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col bg-white dark:bg-dark rounded-md overflow-hidden shadow-xl">
+              <figure class="relative pb-[56.25%] overflow-hidden">
+                <a href="https://project-connect-u.vercel.app/" target="_blank">
+                  <img src="assets/connect-u.png" alt="ODK-X" class="project-image absolute object-cover object-center">
+                </a>
+              </figure>
+              <div class="flex flex-col p-6 xs:p-8">
+                <h3 class="project__title"> Connect-U </h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="tag">Python</div>
+                  <div class="tag">HTML</div>
+                  <div class="tag">CSS</div>
+                  <div class="tag">Django</div>
+                </div>
+                <p class="project__description"> Connect-U is a career service platform that aims to bridge the gap between students and potential employers, offering job listings, as well as student and employer profiles. </p>
+                <div class="flex flex-wrap gap-2">
+                  <a href="https://project-connect-u.vercel.app/" target="_blank" class="project__link">
+                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                    <span>Live</span>
+                  </a>
+                  <a href="https://github.com/emeka-okechukwu-dev/connect-u.git" target="_blank" class="project__link">
+                    <i class="fa-brands fa-github text-sm"></i>
+                    <span>Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col bg-white dark:bg-dark rounded-md overflow-hidden shadow-xl">
+              <figure class="relative pb-[56.25%] overflow-hidden">
+                <a href="https://github.com/odk-x/survey/releases" target="_blank">
+                  <img src="assets/odk-x.png" alt="ODK-X" class="project-image absolute object-cover object-center">
+                </a>
+              </figure>
+              <div class="flex flex-col p-6 xs:p-8">
+                <h3 class="project__title"> ODK-X Survey </h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="tag">JavaScript</div>
+                  <div class="tag">HTML</div>
+                  <div class="tag">CSS</div>
+                  <div class="tag">Moment.js</div>
+                </div>
+                <p class="project__description"> The purpose of this project was to add a range of new prompt types to ODK-X Survey, including support for non-Gregorian calendars through the integration of a third-party jQuery plugin. </p>
+                <div class="flex flex-wrap gap-2">
+                  <a href="https://github.com/odk-x/survey/releases" target="_blank" class="project__link">
+                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                    <span>Live</span>
+                  </a>
+                  <a href="https://github.com/odk-x/app-designer/tree/gsoc-2021" target="_blank" class="project__link">
+                    <i class="fa-brands fa-github text-sm"></i>
+                    <span>Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col bg-white dark:bg-dark rounded-md overflow-hidden shadow-xl">
+              <figure class="relative pb-[56.25%] overflow-hidden">
+                <a href="https://shop.twicethespeed.com/" target="_blank">
+                  <img src="assets/twice-the-speed.png" alt="ODK-X" class="project-image absolute object-cover object-center">
+                </a>
+              </figure>
+              <div class="flex flex-col p-6 xs:p-8">
+                <h3 class="project__title"> Twice The Speed </h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="tag">Shopify</div>
+                </div>
+                <p class="project__description"> Twice The Speed is a leading company in the speed and agility industry since 2009, has a global presence in over 70 countries through its workout program sales. </p>
+                <div class="flex flex-wrap gap-2">
+                  <a href="https://shop.twicethespeed.com/" target="_blank" class="project__link">
+                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                    <span>Live</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col bg-white dark:bg-dark rounded-md overflow-hidden shadow-xl">
+              <figure class="relative pb-[56.25%] overflow-hidden">
+                <a href="https://cleanologyllc.com/" target="_blank">
+                  <img src="assets/cleanology.png" alt="Cleanology" class="project-image absolute object-cover object-center">
+                </a>
+              </figure>
+              <div class="flex flex-col p-6 xs:p-8">
+                <h3 class="project__title"> Cleanology LLC </h3>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <div class="tag">WordPress</div>
+                  <div class="tag">Divi</div>
+                  <div class="tag">CSS</div>
+                </div>
+                <p class="project__description"> Cleanology provides cleaning services for both residential and commercial properties located in the Lower Peninsula of Michigan, including Ann Arbor. </p>
+                <div class="flex flex-wrap gap-2">
+                  <a href="https://cleanologyllc.com/" target="_blank" class="project__link">
+                    <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
+                    <span>Live</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <a href="#" class="footer__anchor">
+            <figure class="footer__logo">
+              <img src="./assets/logo.svg" class="footer__logo--img" alt="">
+            </figure>
+            <span class="footer__logo--popper"> Top <i class="fas fa-arrow-up"></i>
+            </span>
+          </a>
+          <div class="footer__social--list">
+            <a href="https://github.com/emeka-okechukwu-dev" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white"> GitHub </a>
+            <a href="https://www.linkedin.com/in/emeka-okechukwu-0410/" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white"> LinkedIn </a>
+            <a href="#" onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white"> Contact </a>
+            <a href="https://docs.google.com/document/d/1qX4ilOjpSRjjcsH7FulPzzItwj4-A4VuGtpBUZmz0t4/edit?usp=sharing" target="_blank" class="footer__social--link link__hover-effect link__hover-effect--white"> Resume </a>
+          </div>
+          <div class="footer__copyright">Copyright &copy; <script>
+              document.write(new Date().getFullYear())
+            </script> Emeka Okechukwu </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
